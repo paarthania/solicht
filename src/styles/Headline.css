@@ -1,0 +1,42 @@
+.headline {
+  text-align: right;
+}
+
+.static-text {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.dynamic-text {
+  color: #2f6185;
+  width: 360px; /* Fixed width for the static text */
+  margin-left: 170px;
+  font-size: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+
+  text-transform: uppercase;
+}
+
+.dynamic-text::after {
+  content: "|";
+  display: inline-block;
+  animation: blink-caret 0.75s infinite;
+}
+
+@keyframes blink-caret {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .dynamic-text {
+    color: #f7941d;
+    font-size: 45px;
+  }
+  .static-text {
+    font-size: 45px;
+  }
+}
