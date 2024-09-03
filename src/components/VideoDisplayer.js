@@ -38,8 +38,8 @@ const VideoDisplayer = ({}) => {
         </div>
         <div className="image-container-mobile">
           <img
-            src="https://i.postimg.cc/sDBZp79S/project-Video.gif"
-            alt="project promo video se"
+            src="https://i.postimg.cc/s2bL549M/Whats-App-Video2024-09-02at16-48-01-ezgif-com-optimize.gif"
+            alt="solicht energie promo video"
             className="project-image"
           />
         </div>
