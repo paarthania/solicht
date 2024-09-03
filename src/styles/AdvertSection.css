@@ -43,11 +43,15 @@
 }
 
 .benefits-list ul {
-    list-style-type: disc;
     padding-left: 20px;
+    list-style-type: none;
+
 }
 
-.benefits-list ul li {
+.benefits-list ul li:before  {
+    content: "➜";
+    margin-right: 8px; 
+
     margin-bottom: 10px;
 }
 
