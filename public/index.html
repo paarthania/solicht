@@ -4,13 +4,26 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/logo_se_small.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="Solicht Energie"
-      content="Solicht Energie Info"
-    />
- 
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <meta name="Solicht Energie" content="Solicht Energie Info" />
 
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-69SFQ64X49"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-69SFQ64X49");
+    </script>
+    <!-- Google tag (gtag.js) -->
+
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Solicht Energie</title>
   </head>
   <body>

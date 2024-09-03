@@ -1,7 +1,5 @@
 import React from "react";
 import "../styles/AboutUs.css";
-import kerim from "../images/kerim.jpg";
-import ufuk from "../images/ufuk.jpg";
 
 import MemberContainer from "./MemberContainer";
 
@@ -14,7 +12,7 @@ const TeamMembers = () => {
 
       <div className="teamMembersBody">
         <MemberContainer
-          img={kerim}
+          img="https://i.postimg.cc/TYB4Tj33/kerim.jpg"
           name="A. Kerim Turhan"
           titles={[
             "• Inhaber",
@@ -23,7 +21,7 @@ const TeamMembers = () => {
           ]}
         />
         <MemberContainer
-          img={ufuk}
+          img="https://i.postimg.cc/bNZ5XV85/ufuk.jpg"
           name="Ufuk Büyüknalbant"
           titles={[
             "• Geschäftsführer",

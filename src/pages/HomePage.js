@@ -1,7 +1,9 @@
 import Header from "../components/Header";
 import Headline from "../components/Headline";
-import GradientInfo from "../components/GradientInfo";
+import VideoDisplayer from "../components/VideoDisplayer";
+import AdvertSection from "../components/AdvertSection";
 import Footer from "../components/Footer";
+import SocialMediaWidget from "../components/Socials";
 import "../app.css";
 import "../fonts.css";
 
@@ -11,7 +13,10 @@ function HomePage() {
       <div className="background-image"></div>
       <Header />
       <Headline />
-      <GradientInfo />
+      <SocialMediaWidget />
+      <AdvertSection />
+
+      <VideoDisplayer />
       <Footer />
     </div>
   );

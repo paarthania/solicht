@@ -45,7 +45,13 @@ const Header = () => {
       <DesktopHeader>
         <header className="header">
           <div className="logo">
-            <img style={{ width: 60, height: 60 }} src={logoS} />
+            <a href="https://solicht.com/">
+              <img
+                style={{ width: 60, height: 60, cursor: "pointer" }}
+                src={logoS}
+                alt="Logo"
+              />
+            </a>
           </div>
           <div className="main-titles">
             <Link to="/" className="title">
@@ -85,14 +91,16 @@ const Header = () => {
           }}
           onClick={toggleDropdown}
         >
-          <img
-            style={{
-              marginRight: 20,
-              width: 50,
-              height: 50,
-            }}
-            src={logoS}
-          />
+          <a href="https://solicht.com/">
+            <img
+              style={{
+                marginRight: 20,
+                width: 50,
+                height: 50,
+              }}
+              src={logoS}
+            />
+          </a>
 
           {!isOpen && (
             <div

@@ -1,0 +1,106 @@
+/* Container for the main section */
+.main-container {
+    background-color: #183347;
+    font-family: "Montserrat", sans-serif;
+    margin: auto;
+    margin-top: 250px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: white; /* Ensure all text in main container is white */
+}
+
+/* Title section */
+.title-text {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    color: #f7941d; /* Title color */
+}
+
+/* Content section with benefits */
+.content-wrapper {
+    text-align: left; /* Align text to the left for readability */
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 800px;
+}
+
+/* Benefits list */
+.benefits-list {
+    font-size: 18px;
+    line-height: 1.6;
+    color: white; /* Text color in the benefits list */
+    margin-bottom: 20px;
+}
+
+.benefits-list h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #f7941d; /* Heading color */
+}
+
+.benefits-list ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.benefits-list ul li {
+    margin-bottom: 10px;
+}
+
+/* Button styling */
+.request-button {
+    display: inline-flex; 
+    text-align: center;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    padding: 20px 30px; /* Increased padding for a bigger button */
+    font-size: 20px; /* Larger font size */
+    font-weight: bold;
+    color: #fff;
+    background-color: #f7941d; /* Button color */
+    border: none;
+    border-radius: 50%; /* Circular button */
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 20px;
+    line-height: 1.3; /* Increased line-height for more space between lines */
+    width: 120px; /* Fixed width for circular shape */
+    height: 120px; /* Fixed height for circular shape */
+    position: relative; /* Position relative to adjust with top and right */
+    top: -10px; /* Move the button up */
+    right: -10px; /* Move the button to the right */
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    text-transform: uppercase; /* Transform text to uppercase */
+}
+
+
+.request-button:hover {
+    background-color: #3e7dab;
+}
+
+/* Responsive adjustments */
+@media (min-width: 800px) {
+    .main-container {
+        max-width: 1200px;
+        padding-bottom: 30px;
+
+    }
+
+    .content-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .request-button {
+        margin-left: auto; /* Align button to the right */
+        margin-top: 0; /* Remove top margin for better alignment */
+    }
+}

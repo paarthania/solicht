@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import "../app.css";
 import "../fonts.css";
 import "../styles/Contact.css";
+import SocialMediaWidget from "../components/Socials";
 
 import Footer from "../components/Footer";
 function Contact() {
@@ -10,6 +11,8 @@ function Contact() {
       <div className="background-image" alt="background-panels"></div>
 
       <Header />
+      <SocialMediaWidget />
+
       <div className="aboutBody">
         <div className="contact-container">
           <h2>Kontakt</h2>

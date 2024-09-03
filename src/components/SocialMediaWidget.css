@@ -1,0 +1,37 @@
+.social-media-widget {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .social-media-widget a {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3); /* Slightly transparent black */
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .social-media-widget a:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker transparent black on hover */
+  }
+  
+  @media (max-width: 600px) {
+    .social-media-widget a {
+      padding: 6px; 
+    }
+  
+    .social-media-widget a svg {
+      width: 22px;
+      height: 22px; 
+    }
+  }
