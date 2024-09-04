@@ -35,7 +35,7 @@ const ProjectTemplate = ({
             </button>
             <img
               src={images[currentImageIndex]}
-              alt={`Project Image ${currentImageIndex + 1}`}
+              alt={`project img ${currentImageIndex + 1}`}
               className="project-image"
             />
             <button onClick={goToNextImage} className="arrow-button right">
@@ -78,7 +78,7 @@ const ProjectTemplate = ({
           </button>
           <img
             src={images[currentImageIndex]}
-            alt={`Project Image ${currentImageIndex + 1}`}
+            alt={`project img ${currentImageIndex + 1}`}
             className="project-image"
           />
           <button onClick={goToNextImage} className="arrow-button right">

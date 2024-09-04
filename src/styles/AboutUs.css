@@ -1,7 +1,7 @@
 .aboutBody {
   background-color: #2f6185;
+  box-shadow: 0px 4px 8px rgba(50, 50, 70, 0.5);
   display: flex;
-  box-shadow: 0 4px 12px rgba(255, 102, 0, 0.5);
   flex-direction: column;
   align-items: center;
   justify-content: center;
