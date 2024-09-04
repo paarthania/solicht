@@ -99,6 +99,7 @@ const Header = () => {
                 height: 50,
               }}
               src={logoS}
+              alt="Logo"
             />
           </a>
 

@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/VideoDisplayer.css";
 
-const VideoDisplayer = ({}) => {
+const VideoDisplayer = () => {
   return (
     <div className="video-displayer-container">
       <p className="above-video-description">
