@@ -11,6 +11,14 @@
 }
 
 /* Title section */
+.main-title-text {
+    font-size: 33px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 20px 30px;
+    color: #f7941d; /* Title color */
+}
+
 .title-text {
     font-size: 30px;
     font-weight: bold;
@@ -95,6 +103,15 @@
         padding-bottom: 30px;
 
     }
+
+    .main-title-text {
+        font-size: 33px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 10px 90px;
+        color: #f7941d; /* Title color */
+    }
+    
 
     .content-wrapper {
         display: flex;

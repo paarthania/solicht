@@ -35,6 +35,18 @@ const ServicesInfo = () => {
         align="left"
         image="https://i.postimg.cc/c4Cpx47X/Baubegleitung.png"
       />
+      <Service
+        title="Aufzugsmontage & Wartungsservice"
+        description="Neumontage von Aufzügen: Fachgerechte Installation in Wohn-, Gewerbe- und Industriegebäuden.
+        Wartung & Inspektion: Regelmäßige Kontrolle für einen sicheren und störungsfreien Betrieb.
+        Reparaturservice: Schnelle und zuverlässige Behebung von Störungen.
+        Modernisierung: Technische und sicherheitsrelevante Aufwertung älterer Anlagen.
+        Ersatzteile & Notfalldienst: Lieferung, Einbau und 24/7-Service im Störungsfall.
+        Warum wir?
+        Über 35 Jahre Erfahrung, Arbeit nach CE- und DIN EN 81-Normen, persönliche Beratung und faire Preise."
+        align="right"
+        image="https://iili.io/38ctAeR.jpg"
+      />
     </div>
   );
 };

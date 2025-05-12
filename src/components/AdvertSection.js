@@ -49,6 +49,9 @@ const AdvertSection = () => {
           Jetzt Angebot Anfragen
         </a>
       </div>
+      <h1 className="main-title-text">
+        Ihre Solaranlage für Mosbach, Heilbronn und die Region – Solicht Energie
+      </h1>
     </div>
   );
 };
