@@ -17,24 +17,13 @@
     <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#2f6185" />
     <script>
+      document.documentElement.classList.add("js");
       (function () {
         var path = location.hash.slice(1);
         if (path.charAt(0) === "/") {
           location.replace(path === "/" ? "/" : path.replace(/\/?$/, "/"));
         }
       })();
-    </script>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-69SFQ64X49"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-69SFQ64X49");
     </script>
   </head>
   <body>

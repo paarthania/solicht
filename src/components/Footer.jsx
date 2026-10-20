@@ -1,80 +1,96 @@
-import { useEffect, useState } from "react";
-import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { FiMail, FiMapPin, FiPhone } from "react-icons/fi";
+import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import logo from "../images/logo_se_small.png";
+import { contact } from "../content/contact";
 import { IMPRESSUM, DATENSCHUTZ } from "./legal";
 import "../styles/Footer.css";
 
-const Footer = () => {
-  const [legalText, setLegalText] = useState(null);
-  const close = () => setLegalText(null);
+const socials = [
+  { href: contact.whatsapp, label: "WhatsApp", Icon: FaWhatsapp },
+  { href: contact.instagram, label: "Instagram", Icon: FaInstagram },
+  { href: contact.facebook, label: "Facebook", Icon: FaFacebookF },
+];
 
-  useEffect(() => {
-    if (!legalText) return;
-    const handleOutsideClick = (event) => {
-      if (!event.target.closest(".info-box")) close();
-    };
-    const handleEscape = (event) => {
-      if (event.key === "Escape") close();
-    };
-    document.addEventListener("mousedown", handleOutsideClick);
-    document.addEventListener("keydown", handleEscape);
-    return () => {
-      document.removeEventListener("mousedown", handleOutsideClick);
-      document.removeEventListener("keydown", handleEscape);
-    };
-  }, [legalText]);
-
-  return (
-    <footer className="footer">
-      <div className="footer__contact-info">
-        <div className="footer__contact-item">
-          <FaPhone className="footer__icon" />
-          <span>+49 178 823 31 08</span>
-        </div>
-        <div className="footer__contact-item">
-          <FaEnvelope className="footer__icon" />
-          <span>info@solicht.com</span>
-        </div>
-        <div className="footer__contact-item">
-          <FaMapMarkerAlt className="footer__icon" />
-          <span>Ringstraße 27, 74906 Bad Rappenau</span>
-        </div>
-      </div>
-      <div className="footer__logos">
-        <img
-          src={logo}
-          alt="Solicht Energie"
-          loading="lazy"
-          className="footer__logo"
-        />
-      </div>
-      <div className="bottom_infos">
-        <button className="info_button" onClick={() => setLegalText(IMPRESSUM)}>
-          Impressum
-        </button>
-        <button
-          className="info_button"
-          onClick={() => setLegalText(DATENSCHUTZ)}
-        >
-          Datenschutz­erklärung
-        </button>
-      </div>
-      {legalText && (
-        <div className="info-box" role="dialog" aria-modal="true">
-          <div className="info-content">
-            <div dangerouslySetInnerHTML={{ __html: legalText }} />
-            <button
-              className="close-btn"
-              onClick={close}
-              aria-label="Schließen"
-            >
-              X
-            </button>
+const Footer = ({ onOpenLegal }) => (
+  <footer className="site-footer">
+    <div className="container">
+      <div className="footer-grid">
+        <div>
+          <Link className="brand" to="/">
+            <img src={logo} alt="" width="40" height="40" loading="lazy" />
+            Solicht <span>Energie</span>
+          </Link>
+          <p className="footer-about">
+            Photovoltaik, Stromspeicher und nachhaltige Energielösungen für
+            Mosbach, Heilbronn und die Region.
+          </p>
+          <div className="socials">
+            {socials.map(({ href, label, Icon }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+              >
+                <Icon />
+              </a>
+            ))}
           </div>
         </div>
-      )}
-    </footer>
-  );
-};
+        <div>
+          <h4>Seiten</h4>
+          <ul>
+            <li>
+              <Link to="/unternehmen/">Unternehmen</Link>
+            </li>
+            <li>
+              <Link to="/leistungen/">Leistungen</Link>
+            </li>
+            <li>
+              <Link to="/projekte/">Projekte</Link>
+            </li>
+            <li>
+              <Link to="/kontakt/">Kontakt</Link>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <ul className="footer-contact">
+            <li>
+              <FiPhone />
+              <a href={contact.phoneHref}>{contact.phone}</a>
+            </li>
+            <li>
+              <FiMail />
+              <a href={contact.emailHref}>{contact.email}</a>
+            </li>
+            <li>
+              <FiMapPin />
+              <span>
+                {contact.street}, {contact.city}
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="footer-bottom">
+        <span>
+          © {new Date().getFullYear()} Solicht Energie UG (haftungsbeschränkt)
+        </span>
+        <div className="footer-legal">
+          <button type="button" onClick={() => onOpenLegal(IMPRESSUM)}>
+            Impressum
+          </button>
+          <button type="button" onClick={() => onOpenLegal(DATENSCHUTZ)}>
+            Datenschutz­erklärung
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+);
 
 export default Footer;

@@ -1,145 +1,216 @@
 export const IMPRESSUM = `
-Impressum
-<br>
-<br>
-Angaben gemäß § 5 TMG<br>
-Solicht Energie UG (haftungsbeschränkt)<br>
-Ringstraße 27<br>
-74906 Bad Rappenau<br><br>
+<h2>Impressum</h2>
 
-Handelsregister: HRB 793558<br>
-Registergericht: Stuttgart<br><br>
+<h3>Angaben gemäß § 5 DDG</h3>
+<p>
+  Solicht Energie UG (haftungsbeschränkt)<br>
+  Ringstraße 27<br>
+  74906 Bad Rappenau
+</p>
 
-Vertreten durch:<br>
-Ahmet Kerim Turhan<br><br>
+<h3>Handelsregister</h3>
+<p>
+  Registergericht: Amtsgericht Stuttgart<br>
+  Registernummer: HRB 793558
+</p>
 
-Kontakt<br>
-Telefon: +49 178 823 31 08<br>
-E-Mail: info@solicht.com<br><br>
+<h3>Vertreten durch</h3>
+<p>Ahmet Kerim Turhan (Geschäftsführer)</p>
 
-Umsatzsteuer-ID<br>
-Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br>
-HRB 793558<br><br>
+<h3>Kontakt</h3>
+<p>
+  Telefon: +49 178 823 31 08<br>
+  E-Mail: info@solicht.com
+</p>
 
-Verbraucher­streit­beilegung/Universal­schlichtungs­stelle<br>
-Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+<h3>Verbraucherstreitbeilegung / Universalschlichtungsstelle</h3>
+<p>
+  Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor
+  einer Verbraucherschlichtungsstelle teilzunehmen.
+</p>
 `;
 
 export const DATENSCHUTZ = `
-Datenschutz­erklärung
-<br>
-<br>
-Allgemeine Hinweise<br>
-Der Betreiber dieser Seiten nimmt den Schutz Ihrer persönlichen Daten sehr ernst. Ihre Daten mit denen sie persönlich identifiziert werden können, werden von mir vertraulich und unter Beachtung der gesetzlichen Datenschutzvorschriften, sowie dieser Datenschutzerklärung behandelt.<br><br>
+<h2>Datenschutzerklärung</h2>
+<p class="legal-meta">Stand: Oktober 2026</p>
 
-Die vorliegende Datenschutzerklärung erläutert, welche Daten ich erhebe und wofür sie genutzt werden.<br><br>
+<h3>1. Allgemeine Hinweise</h3>
+<p>
+  Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Personenbezogene
+  Daten werden von uns vertraulich und entsprechend den gesetzlichen
+  Datenschutzvorschriften sowie dieser Datenschutzerklärung behandelt. Diese
+  Erklärung erläutert, welche Daten wir erheben, wofür wir sie nutzen und
+  welche Rechte Sie haben.
+</p>
+<p>
+  Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der
+  Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser
+  Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
+</p>
 
-Ich weise darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.<br><br>
+<h3>2. Verantwortlicher</h3>
+<p>
+  Solicht Energie UG (haftungsbeschränkt)<br>
+  vertreten durch Ahmet Kerim Turhan<br>
+  Ringstraße 27<br>
+  74906 Bad Rappenau<br>
+  Telefon: +49 178 823 31 08<br>
+  E-Mail: info@solicht.com
+</p>
 
-Kontaktdaten des für die Verarbeitung Verantwortlichen<br>
-Die nachfolgende Datenschutzerklärung gilt für die Datenverarbeitung durch den folgenden Verantwortlichen:<br><br>
+<h3>3. Hosting und Server-Logfiles</h3>
+<p>
+  Unsere Website wird bei einem externen Hosting-Anbieter (GoDaddy) betrieben.
+  Beim Aufruf der Website übermittelt Ihr Browser automatisch Informationen an
+  den Server, die vorübergehend in sogenannten Logfiles gespeichert werden:
+</p>
+<ul>
+  <li>Browsertyp und Browserversion</li>
+  <li>verwendetes Betriebssystem</li>
+  <li>Referrer-URL (zuvor besuchte Seite)</li>
+  <li>Hostname des zugreifenden Rechners</li>
+  <li>Uhrzeit der Serveranfrage</li>
+  <li>IP-Adresse</li>
+</ul>
+<p>
+  Die Verarbeitung dient dazu, Ihnen die Website technisch fehlerfrei
+  bereitzustellen sowie Systemsicherheit und -stabilität auszuwerten. Eine
+  Zusammenführung mit anderen Datenquellen findet nicht statt.
+  Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; unser berechtigtes Interesse
+  liegt in den genannten Zwecken.
+</p>
 
-Ahmet Kerim Turhan<br>
-Ringstraße 27<br>
-74906 Bad Rappenau<br><br>
+<h3>4. Cookies und Webanalyse</h3>
+<p>
+  Unsere Website selbst setzt keine Cookies und verwendet keine Analyse- oder
+  Tracking-Dienste. Lediglich die auf der Kontaktseite eingebundene Karte von
+  Google Maps kann Cookies setzen (siehe Abschnitt 5).
+</p>
 
-+(49) 178 823 31 08<br><br>
+<h3>5. Google Maps</h3>
+<p>
+  Auf unserer Kontaktseite binden wir eine Karte von Google Maps (Google
+  Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland) ein, damit Sie unseren Standort
+  leicht finden. Beim Aufruf der Kontaktseite wird eine Verbindung zu Servern
+  von Google hergestellt; dabei werden insbesondere Ihre IP-Adresse und
+  Informationen zu Ihrem Browser an Google übertragen, und Google kann Cookies
+  setzen. Es ist nicht ausgeschlossen, dass Daten an die Google LLC in den USA
+  übermittelt werden. Google LLC ist nach dem EU-US Data Privacy Framework
+  zertifiziert; für die Übermittlung besteht damit ein Angemessenheitsbeschluss
+  der EU-Kommission.
+</p>
+<p>
+  Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; unser berechtigtes Interesse
+  liegt in einer ansprechenden Darstellung unseres Standorts und der leichten
+  Auffindbarkeit. Weitere Informationen:
+  <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a>.
+</p>
 
-info@solicht.com<br>
-www.solicht.com<br><br>
+<h3>6. Schriftarten</h3>
+<p>
+  Die auf dieser Website verwendeten Schriftarten sind lokal auf unserem
+  Server gespeichert. Beim Aufruf der Seite wird keine Verbindung zu Servern
+  von Google oder anderen Anbietern hergestellt.
+</p>
 
-Verarbeitung und Erhebung personenbezogener Daten beim Aufruf der Website<br>
-Durch den Aufruf unserer Webseite www.solicht.com sendet der auf ihrem Mediengerät verwendete Browser automatisch Informationen an den Server unserer Website. Diese Informationen werden zeitweilig in einem so genannten Logfile gespeichert.<br><br>
+<h3>7. Kontaktaufnahme per E-Mail, Telefon oder WhatsApp</h3>
+<p>
+  Wenn Sie uns per E-Mail oder Telefon kontaktieren, verarbeiten wir Ihre
+  Angaben (z. B. Name, Kontaktdaten und Ihr Anliegen), um Ihre Anfrage zu
+  bearbeiten und für mögliche Anschlussfragen. Rechtsgrundlage ist Art. 6
+  Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit einem Vertrag oder
+  vorvertraglichen Maßnahmen zusammenhängt, ansonsten Art. 6 Abs. 1 lit. f
+  DSGVO (berechtigtes Interesse an der Beantwortung von Anfragen). Die Daten
+  verbleiben bei uns, bis der Zweck entfällt, Sie die Löschung verlangen oder
+  gesetzliche Aufbewahrungspflichten enden.
+</p>
+<p>
+  Unsere Website enthält einen Link zu WhatsApp. Erst wenn Sie diesen Link
+  anklicken, wird WhatsApp (WhatsApp Ireland Limited, Merrion Road, Dublin 4,
+  D04 X2K5, Irland) aufgerufen. Für die Kommunikation über WhatsApp gelten
+  zusätzlich die Datenschutzbestimmungen von WhatsApp.
+</p>
 
-Nachfolgend finden Sie eine abschließende Aufzählung derjenigen Informationen, die bei Besuch unserer Website erfasst und bis zur automatisierten Löschungen gespeichert werden:<br><br>
+<h3>8. Links zu sozialen Netzwerken</h3>
+<p>
+  Wir verlinken auf unsere Profile bei Instagram und Facebook (Meta Platforms
+  Ireland Limited, Merrion Road, Dublin 4, D04 X2K5, Irland). Es handelt sich
+  um einfache Links: Daten werden erst an Meta übertragen, wenn Sie einen Link
+  anklicken und die jeweilige Plattform aufrufen.
+</p>
 
-Browsertyp und Browserversion<br>
-verwendetes Betriebssystem<br>
-Referrer URL<br>
-Hostname des zugreifenden Rechners<br>
-Uhrzeit der Serveranfrage<br>
-IP-Adresse<br><br>
+<h3>9. Weitergabe von Daten</h3>
+<p>
+  Eine Weitergabe Ihrer Daten an Dritte findet außer in den oben genannten
+  Fällen nur statt, wenn:
+</p>
+<ul>
+  <li>Sie nach Art. 6 Abs. 1 lit. a DSGVO ausdrücklich eingewilligt haben,</li>
+  <li>
+    die Weitergabe nach Art. 6 Abs. 1 lit. f DSGVO zur Geltendmachung,
+    Ausübung oder Verteidigung von Rechtsansprüchen erforderlich ist und kein
+    Grund zur Annahme besteht, dass Sie ein überwiegendes schutzwürdiges
+    Interesse an der Nichtweitergabe haben,
+  </li>
+  <li>
+    nach Art. 6 Abs. 1 lit. c DSGVO eine gesetzliche Verpflichtung besteht,
+    oder
+  </li>
+  <li>
+    dies nach Art. 6 Abs. 1 lit. b DSGVO für die Abwicklung von
+    Vertragsverhältnissen mit Ihnen erforderlich ist.
+  </li>
+</ul>
 
-Die Verarbeitung erfolgt zu dem Zweck, Ihnen einen reibungslosen Verbindungsaufbau zu meiner Webseite und eine komfortable Nutzung meiner Webseite zu ermöglichen. Darüber hinaus kann aufgrund der Daten eine Auswertung der Systemsicherheit und der Systemstabilität vorgenommen werden. Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.<br><br>
+<h3>10. Ihre Rechte</h3>
+<p>Sie haben gegenüber uns folgende Rechte hinsichtlich Ihrer personenbezogenen Daten:</p>
+<ul>
+  <li>Recht auf Auskunft (Art. 15 DSGVO)</li>
+  <li>Recht auf Berichtigung (Art. 16 DSGVO)</li>
+  <li>Recht auf Löschung (Art. 17 DSGVO)</li>
+  <li>Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
+  <li>Recht auf Datenübertragbarkeit (Art. 20 DSGVO)</li>
+  <li>
+    Recht auf Widerruf einer erteilten Einwilligung mit Wirkung für die Zukunft
+    (Art. 7 Abs. 3 DSGVO)
+  </li>
+</ul>
+<p>
+  <b>Widerspruchsrecht (Art. 21 DSGVO):</b> Soweit wir Daten auf Grundlage
+  berechtigter Interessen (Art. 6 Abs. 1 lit. f DSGVO) verarbeiten, können Sie
+  dieser Verarbeitung aus Gründen, die sich aus Ihrer besonderen Situation
+  ergeben, jederzeit widersprechen.
+</p>
+<p>
+  <b>Beschwerderecht (Art. 77 DSGVO):</b> Sie haben das Recht, sich bei einer
+  Datenschutz-Aufsichtsbehörde zu beschweren. Für uns zuständig ist der
+  Landesbeauftragte für den Datenschutz und die Informationsfreiheit
+  Baden-Württemberg.
+</p>
+<p>
+  Zur Ausübung Ihrer Rechte genügt eine formlose Nachricht an die oben
+  genannten Kontaktdaten.
+</p>
 
-Grundlage für die Datenverarbeitung ist Art. 6 Abs. 1 S. 1 lit. f DSGVO. Mein berechtigtes Interesse folgt aus den vorgenannten Zwecken.<br><br>
+<h3>11. Datensicherheit</h3>
+<p>
+  Wir setzen geeignete technische und organisatorische Maßnahmen ein, um Ihre
+  Daten gegen Manipulation, Verlust, Zerstörung oder unbefugten Zugriff zu
+  schützen. Diese Website nutzt aus Sicherheitsgründen eine SSL- bzw.
+  TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie an
+  „https://" und dem Schloss-Symbol in der Adresszeile Ihres Browsers.
+</p>
 
-Cookies<br>
-Die Webseite verwendet Cookies. Dies sind kleine Textdateien, die bei entsprechender Konfiguration Ihres Webbrowsers automatisch erstellt und auf Ihr Mediengerät zwischengespeichert werden, wenn Sie meine Webseite besuchen. Cookies enthalten keinerlei Schadsoftware, so dass Ihr Mediengerät hierdurch keinen Schaden erleidet. Durch den Einsatz von Cookies werden Information gespeichert, welche sich aus dem Einsatz des spezifischen Mediengeräts ergeben, wobei keine unmittelbare Kenntnis der Identität des Nutzers hierdurch erfolgt.<br><br>
+<h3>12. Hinweis zur E-Mail-Kommunikation</h3>
+<p>
+  Die Kommunikation per E-Mail ist nicht vollständig gegen unbefugten Zugriff
+  geschützt. Für Informationen mit hohem Geheimhaltungsbedürfnis empfehlen wir
+  daher den Postweg.
+</p>
 
-Grundsätzlich dienen Cookies dazu, mein Angebot benutzerfreundlicher, effektiver und sicherer zu machen. Hierzu werden zum einen so genannte Session-Cookies verwandt, um kenntlich zu machen, welche einzelnen Seiten meiner Website bereits besucht wurden. Zum anderen werden so genannte Persistent Cookies verwendet, mithilfe derer erkannt wird, ob Sie bereits zuvor meine Webseite besucht haben. Dies verhindert, dass Sie Daten und Einstellungen, die Sie in einer vorangegangenen Sitzung angegeben haben, erneut tätigen müssen.<br><br>
-
-Zudem werden die Cookies verwendet um die Nutzung meiner Website statistisch zu erfassen und die Daten auswerten zu können und so ein optimiertes Angebot für Sie bereitzustellen.<br><br>
-
-Sämtliche Cookies werden nach vorgegebener Zeit automatisch gelöscht.<br><br>
-
-Für Ihren Webbrowser besteht die Möglichkeit, ihn so einzustellen, dass Sie über das Setzen von Cookies informiert werden und diesen Vorgang nur im Einzelfall erlauben, oder dass Sie die Annahme von Cookies für bestimmte Fälle oder generell ausschließen. Auch können Sie Ihren Webbrowser so konfigurieren, dass bei Schließen des Browsers Cookies automatisch gelöscht werden. Es kann aber bei der Aktivierung der Cookies zur Funktionseinschränkungen meiner Webseite kommen.<br><br>
-
-Auf Grundlage von Art. 6 Abs. 1 S. 1 lit. f DSGVO werden durch uns Cookies verwandt, um die Durchführung des elektronischen Kommunikationsvorgangs oder die Bereitstellung bestimmter Funktionen, sowie die statistische Auswertung der Website vornehmen zu können. Ein berechtigtes Interesse besteht meinerseits daher im Hinblick auf die Speicherung von Cookies zur technisch fehlerfreien und optimierten Bereitstellung der Dienste der Webseite durch den Betreiber.<br><br>
-
-Nutzung des Kontaktformulars<br>
-Bei Nutzung meines Kontaktformulars, werden Ihre Angaben nebst der von Ihnen dort angegebenen Kontaktdaten zum Zwecke der Bearbeitung des Vorgangs und für den Fall von Anschlussfragen gespeichert.<br><br>
-
-Diese Daten verbleiben bei mir, bis der Zweck für die Datenspeicherung entfällt, oder Sie mich zur Löschung auffordern, oder Ihre Einwilligung zu Speicherung widerrufen. Eine Löschungsaufforderung oder einen Widerruf können Sie jederzeit per Mail oder postalisch mitteilen. Der Vorgang wird unverzüglich bearbeitet.<br><br>
-
-Die Erhebung der Daten erfolgt auf Grundlage Ihrer freiwilligen und ausdrücklichen Einwilligung in Einklang mit Art. 6 Abs. 1 S. 1 lit. a DSGVO.<br><br>
-
-Weitergabe von Daten<br>
-Mit Ausnahme der folgenden aufgeführten Zwecke, werden Ihre Daten nur innerhalb des Unternehmens verwendet.<br><br>
-
-Die Weitergabe von Daten erfolgt daher nur, wenn:<br><br>
-
-Sie nach Art. 6 Abs. 1 S. 1 lit. a DSGVO Ihre ausdrückliche Einwilligung zur Weitergabe erteilt haben,<br>
-die Weitergabe nach Art. 6 Abs. 1 S. 1 lit. f DSGVO zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen erforderlich ist und kein Grund zur Annahme besteht, dass Sie ein überwiegendes schutzwürdiges Interesse an der Nichtweitergabe Ihrer Daten haben,<br>
-für den Fall, dass für die Weitergabe nach Art. 6 Abs. 1 S. 1 lit. c DSGVO eine gesetzliche Verpflichtung besteht, sowie<br>
-dies gesetzlich zulässig und nach Art. 6 Abs. 1 S. 1 lit. b DSGVO für die Abwicklung von Vertragsverhältnissen mit Ihnen erforderlich ist.<br><br>
-
-Verwendung von Scriptbibliotheken (Google Webfonts)<br>
-Diese Seite nutzt Google Web Fonts. Dabei handelt es sich um eine Darstellung von Schriftarten die von Google (Google LLC., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA) bereitgestellt werden.<br><br>
-
-Durch das Akzeptieren der Datenschutzerklärung lädt Ihr Browser die Schriftart in ihren Browser-Cache, um diese korrekt anzuzeigen. Hierbei wird eine Verbindung zwischen Ihrem Browser und dem Server von Google aufgebaut. Dadurch erlangt Google Kenntnis darüber, dass über ihre IP-Adresse meine Webseite aufgerufen wurde.<br><br>
-
-Weitere Informationen zu dem Datenschutz durch Google finden Sie unter <a href="https://developers.google.com/fonts/faq" target="_blank">https://developers.google.com/fonts/faq</a> und in der Datenschutzerklärung von Google: <a href="https://www.google.com/policies/privacy/" target="_blank">https://www.google.com/policies/privacy/</a>.<br><br>
-
-Ich habe ein berechtigtes Interesse daran, Ihnen eine einheitliche und benutzerfreundliche Darstellung meiner Webseite zu ermöglichen. Die Erhebung der Daten erfolgt auf Grundlage von Art. 6 Abs. 1 S. 1 lit. f DSGVO.<br><br>
-
-Rechte als Betroffener<br>
-Recht auf Auskunft (Art. 15 DSGVO)<br>
-Sie haben das Recht eine Auskunft über Ihre, von mir verarbeiteten personenbezogenen Daten zu verlangen. Dabei können Sie insbesondere Auskunft über die Verarbeitungszwecke, die Kategorie der personenbezogenen Daten, die Empfänger, gegenüber denen Ihre Daten offengelegt wurden oder werden, das Bestehen eines Rechts auf Berichtigung, Löschung, Einschränkung der Verarbeitung oder Widerspruch, die geplante Dauer der Speicherung, die Datenherkunft und ob eine automatisierte Entscheidungsfindung angewandt wird.<br><br>
-
-Recht auf Berichtigung (Art. 16 DSGVO)<br>
-Sie können verlangen dass unrichtige oder unvollständig gespeicherte, personenbezogene Daten umgehend korrigiert werden.<br><br>
-
-Recht auf Löschung (Art. 17 DSGVO)<br>
-Sie können die Löschung Ihrer Daten verlangen. Dies gilt nicht, wenn die Verarbeitung zur Ausübung des Rechts auf freie Meinungsäußerung, zur Erfüllung einer rechtlichen Verpflichtung, aus Gründen des öffentlichen Interesses oder zur Ausübung, Verteidigung oder Geltendmachung von Rechtsansprüchen erforderlich ist.<br><br>
-
-Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)<br>
-Sie können die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten verlangen, wenn eine der folgenden Voraussetzungen vorliegt:<br><br>
-
-Sie bestreiten die Richtigkeit der erhobenen Daten und schränken daher die Verarbeitung für die Dauer der Überprüfung der Richtigkeit der Daten ein.<br>
-Bei unrechtmäßiger Verarbeitung können Sie entweder die Löschung oder die Einschränkung der Verarbeitung Ihrer Daten verlangen.<br>
-Werden Daten von mir zum Zwecke der Verarbeitung nicht länger benötigt, während sie diese jedoch zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen benötigen, können Sie eine Veränderung oder Löschung unterbinden.<br>
-Auch wenn sie gemäß Art. 21 Datenschutzgrundverordnung Widerspruch gegen die Verarbeitung eingelegt haben, hat eine weitere Bearbeitung der Daten zu unterbleiben, bis feststeht, ob der Widerspruch gerechtfertigt ist oder nicht.<br><br>
-
-Recht auf Datenübertragbarkeit (Art. 20 DSGVO)<br>
-Sie haben das Recht, Ihre personenbezogenen Daten in einem strukturierten, gängigen und maschinenlesbaren Format heraus zu verlangen. Weiter haben Sie auch das Recht, die Übermittlung der bereitgestellten Daten zu einem anderen Verantwortlichen zu verlangen.<br><br>
-
-Recht auf Widerruf (Art. 7 Abs. 3 DSGVO)<br>
-Sie haben das Recht, eine einmal erfolgte Einwilligung zur Erhebung Ihrer Daten jederzeit zu widerrufen. Dabei bleibt die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung unberührt.<br><br>
-
-Recht auf Beschwerde (Art. 77 DSGVO)<br>
-Sie haben das Recht bei einer Aufsichtsbehörde Beschwerde einzureichen, wenn Sie der Ansicht sind, dass die Verarbeitung der Sie betreffenden, personenbezogenen Daten rechtswidrig ist. Dabei kann die Aufsichtsbehörde am Ort des mutmaßlichen Verstoßes, im Mitgliedstaat Ihres gewöhnlichen Aufenthaltsort oder Ihres Arbeitsplatzes angerufen werden.<br><br>
-
-Widerspruchsrecht (Art. 21 DSGVO)<br>
-Sie haben das Recht jederzeit gegen die Verarbeitung Sie betreffender, personenbezogener Daten Widerspruch einzulegen. Das Widerspruchsrecht besteht aber nur gegenüber solchen Verarbeitungen, die mit der Ausübung eines besonderen öffentlichen Interesses, der in Ausübung der öffentlichen Gewalt erfolgenden Aufgaben oder zur Wahrung meiner berechtigten Interessen, in Fällen der Direktwerbung, sowie bei Verarbeitungen zu Forschungs- oder Statistikzwecken erfolgen.<br><br>
-
-Datensicherheit<br>
-Um Ihre Daten gegen zufällige oder vorsätzlicher Manipulation, Verlust, Zerstörung oder den unbefugten Zugriff Dritter zu schützen, setze ich geeignete technische und organisatorische Hilfsmittel, entsprechend dem gegenwärtigen Stand der Technik, ein.<br><br>
-
-Aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, nutzt diese Webseite eine SSL-Verschlüsselung. Die Verschlüsselung der Verbindung erkennen Sie an der Adressleiste des Browsers, die von "http://" auf "https://" wechselt und an dem Schloss-Symbol in Ihrer Browserzeile. Mithilfe der Verschlüsselung können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.<br><br>
-
-E-Mail Nutzung<br>
-Die Kommunikation auf dem elektronischen Weg, insbesondere per E-Mail, ist risikobehaftet. Denn es kann nicht ausgeschlossen werden, dass Dritte sich Zugang in der Weise zu der E-Mail verschaffen, dass sie von ihr Kenntnis nehmen oder sie gar verändern. Auch kann nicht ausgeschlossen werden, dass eine E-Mail Schadsoftware enthält. Es wird daher bei Informationen mit hohem Geheimhaltungsbedürfnis der Postweg empfohlen.<br><br>
-
-Änderungsvorbehalt<br>
-Insbesondere soweit dies aufgrund der technischen Entwicklung erforderlich wird, behalte ich mir das Recht vor, die Sicherheits- und Datenschutzmaßnahmen zu verändern. Dementsprechend wird auch die Datenschutzerklärung angepasst. Bitte beachten Sie daher jeweils die aktuelle Version dieser Datenschutzerklärung.`;
+<h3>13. Änderungen</h3>
+<p>
+  Wir passen diese Datenschutzerklärung an, wenn sich unsere Website oder die
+  rechtlichen Vorgaben ändern. Es gilt jeweils die aktuelle Fassung.
+</p>
+`;
