@@ -59,6 +59,12 @@
 }
 
 .mobile-menu-label {
+  padding: 0;
+  border: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
   font-weight: bold;
 }
 

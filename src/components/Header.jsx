@@ -5,10 +5,10 @@ import "../styles/Header.css";
 
 const navItems = [
   { name: "Startseite", route: "/" },
-  { name: "Unternehmen", route: "/unternehmen" },
-  { name: "Leistungen", route: "/leistungen" },
-  { name: "Projekte", route: "/projekte" },
-  { name: "Kontakt", route: "/kontakt" },
+  { name: "Unternehmen", route: "/unternehmen/" },
+  { name: "Leistungen", route: "/leistungen/" },
+  { name: "Projekte", route: "/projekte/" },
+  { name: "Kontakt", route: "/kontakt/" },
 ];
 
 const NavLinks = () =>
@@ -20,7 +20,7 @@ const NavLinks = () =>
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const toggleMenu = () => setIsMenuOpen((open) => !open);
+  const closeMenu = () => setIsMenuOpen(false);
 
   return (
     <>
@@ -37,22 +37,33 @@ const Header = () => {
         </header>
       </div>
       <div className="mobile-header">
-        <div className="mobile-header-bar" onClick={toggleMenu}>
-          <Link to="/">
-            <img className="mobile-logo-image" src={logo} alt="Solicht Energie" />
+        <div className="mobile-header-bar">
+          <Link to="/" onClick={closeMenu}>
+            <img
+              className="mobile-logo-image"
+              src={logo}
+              alt="Solicht Energie"
+            />
           </Link>
           {isMenuOpen ? (
             <ul className="mobile-menu">
               {navItems.map(({ name, route }) => (
                 <li key={route}>
-                  <Link to={route} className="nav-link">
+                  <Link to={route} className="nav-link" onClick={closeMenu}>
                     {name}
                   </Link>
                 </li>
               ))}
             </ul>
           ) : (
-            <div className="mobile-menu-label">Menu</div>
+            <button
+              type="button"
+              className="mobile-menu-label"
+              aria-expanded="false"
+              onClick={() => setIsMenuOpen(true)}
+            >
+              Menu
+            </button>
           )}
         </div>
       </div>

@@ -13,8 +13,15 @@ const Footer = () => {
     const handleOutsideClick = (event) => {
       if (!event.target.closest(".info-box")) close();
     };
+    const handleEscape = (event) => {
+      if (event.key === "Escape") close();
+    };
     document.addEventListener("mousedown", handleOutsideClick);
-    return () => document.removeEventListener("mousedown", handleOutsideClick);
+    document.addEventListener("keydown", handleEscape);
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+      document.removeEventListener("keydown", handleEscape);
+    };
   }, [legalText]);
 
   return (
@@ -53,10 +60,14 @@ const Footer = () => {
         </button>
       </div>
       {legalText && (
-        <div className="info-box" onClick={close}>
+        <div className="info-box" role="dialog" aria-modal="true">
           <div className="info-content">
             <div dangerouslySetInnerHTML={{ __html: legalText }} />
-            <button className="close-btn" onClick={close} aria-label="Schließen">
+            <button
+              className="close-btn"
+              onClick={close}
+              aria-label="Schließen"
+            >
               X
             </button>
           </div>

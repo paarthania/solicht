@@ -52,12 +52,7 @@ const ServicesInfo = () => (
         key={title}
         className={`service ${index % 2 ? "service--right" : "service--left"}`}
       >
-        <img
-          src={image}
-          alt={title}
-          className="service-image"
-          loading="lazy"
-        />
+        <img src={image} alt={title} className="service-image" loading="lazy" />
         <div className="service-content">
           <h2 className="service-title">{title}</h2>
           <p>{description}</p>

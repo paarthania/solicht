@@ -22,7 +22,7 @@ const useTypewriter = (words) => {
           setLength((current) => current + 1);
         }
       },
-      isComplete ? HOLD_DELAY_MS : TYPING_DELAY_MS
+      isComplete ? HOLD_DELAY_MS : TYPING_DELAY_MS,
     );
     return () => clearTimeout(timeout);
   }, [isComplete, length, words.length]);
