@@ -1,3 +1,11 @@
+.headline-container {
+  margin-right: 30px;
+  margin-top: 4rem;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .headline {
   text-align: right;
 }
@@ -10,12 +18,11 @@
 
 .dynamic-text {
   color: #2f6185;
-  width: 360px; /* Fixed width for the static text */
+  width: 360px;
   margin-left: 170px;
   font-size: 30px;
   overflow: hidden;
   white-space: nowrap;
-
   text-transform: uppercase;
 }
 
@@ -32,10 +39,16 @@
 }
 
 @media (min-width: 1000px) {
+  .headline-container {
+    margin-right: 170px;
+    margin-top: 5rem;
+  }
+
   .dynamic-text {
     color: #f7941d;
     font-size: 45px;
   }
+
   .static-text {
     font-size: 45px;
   }

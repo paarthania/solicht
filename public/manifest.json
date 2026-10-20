@@ -1,20 +1,23 @@
 {
   "short_name": "Solicht Energie",
   "name": "Solicht Energie",
-
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#2f6185",
   "background_color": "#ffffff",
-
   "icons": [
     {
-      "src": "logo_se_small.png",
+      "src": "favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "logo_se_XL.png",
+      "src": "icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }

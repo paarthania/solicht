@@ -1,144 +1,62 @@
-import React, { useState } from "react";
-import "../styles/Header.css";
-import logoS from "../images/logo_se_small.png";
-import styled from "styled-components";
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../images/logo_se_small.png";
+import "../styles/Header.css";
 
-const DesktopHeader = styled.div`
-  justify-content: center;
-  align-items: center;
-  display: none; /* Default display is none */
-  width: 80%;
-  z-index: 1;
-  @media (min-width: 1000px) {
-    display: block;
-    margin: auto;
-  }
-`;
-
-const MobileHeader = styled.div`
-  display: block;
-  width: 82%;
-  z-index: 1;
-  margin: auto;
-
-  @media (min-width: 1000px) {
-    display: none;
-  }
-`;
-const options = [
+const navItems = [
   { name: "Startseite", route: "/" },
   { name: "Unternehmen", route: "/unternehmen" },
   { name: "Leistungen", route: "/leistungen" },
   { name: "Projekte", route: "/projekte" },
   { name: "Kontakt", route: "/kontakt" },
 ];
-const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
 
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
+const NavLinks = () =>
+  navItems.map(({ name, route }) => (
+    <Link key={route} to={route} className="nav-link">
+      {name}
+    </Link>
+  ));
+
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => setIsMenuOpen((open) => !open);
 
   return (
-    <div style={{ fontFamily: "Montserrat" }}>
-      <DesktopHeader>
+    <>
+      <div className="desktop-header">
         <header className="header">
           <div className="logo">
-            <a href="https://solicht.com/">
-              <img
-                style={{ width: 60, height: 60, cursor: "pointer" }}
-                src={logoS}
-                alt="Logo"
-              />
-            </a>
-          </div>
-          <div className="main-titles">
-            <Link to="/" className="title">
-              Startseite
-            </Link>
-
-            <Link to="/unternehmen" className="title">
-              Unternehmen
-            </Link>
-
-            <Link to="/leistungen" className="title">
-              Leistungen
-            </Link>
-
-            <Link to="/projekte" className="title">
-              Projekte
-            </Link>
-
-            <Link to="/kontakt" className="title">
-              Kontakt
+            <Link to="/">
+              <img className="logo-image" src={logo} alt="Solicht Energie" />
             </Link>
           </div>
+          <nav className="main-titles">
+            <NavLinks />
+          </nav>
         </header>
-      </DesktopHeader>
-      <MobileHeader>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            padding: "15px",
-            marginBottom: "30px",
-            color: "#2F6185",
-            textAlign: "center",
-            backgroundColor: "rgba(255, 255, 255, 0.5)",
-            fontSize: "20px",
-          }}
-          onClick={toggleDropdown}
-        >
-          <a href="https://solicht.com/">
-            <img
-              style={{
-                marginRight: 20,
-                width: 50,
-                height: 50,
-              }}
-              src={logoS}
-              alt="Logo"
-            />
-          </a>
-
-          {!isOpen && (
-            <div
-              style={{
-                fontWeight: "bold",
-
-                alignSelf: "center",
-              }}
-            >
-              Menu
-            </div>
-          )}
-
-          {isOpen && (
-            <div>
-              <ul style={{ listStyleType: "none", marginLeft: "-25px" }}>
-                {options.map((option) => (
-                  <li
-                    onClick={() => {
-                      toggleDropdown();
-                    }}
-                    style={{
-                      marginBottom: "20px",
-                      cursor: "pointer",
-                    }}
-                  >
-                    <Link to={option.route} className="title">
-                      {option.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+      </div>
+      <div className="mobile-header">
+        <div className="mobile-header-bar" onClick={toggleMenu}>
+          <Link to="/">
+            <img className="mobile-logo-image" src={logo} alt="Solicht Energie" />
+          </Link>
+          {isMenuOpen ? (
+            <ul className="mobile-menu">
+              {navItems.map(({ name, route }) => (
+                <li key={route}>
+                  <Link to={route} className="nav-link">
+                    {name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <div className="mobile-menu-label">Menu</div>
           )}
         </div>
-      </MobileHeader>
-    </div>
+      </div>
+    </>
   );
 };
 

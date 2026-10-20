@@ -1,107 +1,79 @@
 .video-displayer-container {
-    font-family: "Montserrat";
-    margin: auto;
-    margin-top: 60px;
-    text-align: center;
-    display: block;
-    flex-direction: column;
-  }
+  margin: auto;
+  margin-top: 60px;
+  text-align: center;
+}
 
-  .static-video-text {
-    text-align: center;
-    margin-bottom: 25px;
-    font-size: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  
-  .content-container {
-    display: block;
-    flex-direction: column;
-  }
-  
-  
-  .image-container-mobile {
-    display: flex;
-    position: relative;
-    margin-top: 20px;
-  }
-  
+.above-video-description {
+  text-align: right;
+  color: #f2f2f2;
+  font-size: 20px;
+  margin: auto;
+  margin-bottom: 15px;
+  max-width: 95%;
+}
+
+.promo-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.promo-media {
+  order: 1;
+  display: flex;
+  margin-top: 20px;
+}
+
+.promo-video {
+  border-radius: 5px;
+  max-width: 80%;
+  max-height: 700px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 12px rgba(75, 112, 158, 0.5);
+}
+
+.promo-text {
+  margin-top: 30px;
+}
+
+.static-video-text {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+.static-video-text.accent {
+  color: #f7941d;
+}
+
+@media (min-width: 800px) {
   .above-video-description {
-    text-align: right;
-    color: #f2f2f2;
-    font-size: 18px;
+    margin-top: 45px;
+    margin-bottom: 65px;
+    padding-left: 230px;
+    max-width: 810px;
+  }
+
+  .promo-content {
+    flex-direction: row;
+    max-width: 1200px;
     margin: auto;
-    font-size: 20px;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .promo-media {
+    order: 0;
+    margin-top: 0;
     margin-bottom: 15px;
-    max-width: 95%;
-
-  }
-  
-  .image-container-desktop {
-    display: none;
-  }
-  
-
-  .left {
-    left: 1%;
-  }
-  
-  .right {
-    right: 1%;
-  }
-  .project-image {
-    border-radius: 5px;
-    max-width: 80%;
-    max-height: 700px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 4px 12px rgba(75, 112, 158, 0.5);
-    transition: opacity 0.5s ease; /* Add transition effect for opacity */
   }
 
-  
-  @media (min-width: 800px) {
-    .content-container {
-      display: flex;
-      flex-direction: row;
-      max-width: 1200px;
-      margin: auto;
-      align-items: center;
-      gap: 10px;
+  .promo-video {
+    max-height: 450px;
   }
-  
-  
-    .project-image {
-      max-height: 450px;
-    }
-  
-    .left {
-      left: 4%;
-    }
-  
-    .right {
-      right: 4%;
-    }
-  
-    .above-video-description {
-      margin-top: 45px;
-      margin-bottom: 65px;
-      padding-left: 230px;
-      max-width: 810px;
-    }
-    
-  
-    .image-container-desktop {
-      display: flex;
-      position: relative;
-      margin-bottom: 15px;
-    }
-  
-    .image-container-mobile {
-      display: none;
-    }
-  }
-  
+}

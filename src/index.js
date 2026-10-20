@@ -1,15 +1,14 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { HashRouter, Routes, Route } from "react-router-dom"; // Import HashRouter instead of BrowserRouter
+import { createRoot } from "react-dom/client";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import "./styles/App.css";
 import HomePage from "./pages/HomePage";
 import Services from "./pages/Services";
 import Projects from "./pages/Projects";
 import AboutUs from "./pages/AboutUs";
-import Contact from "./pages/Conatct"; // Correct typo here
+import Contact from "./pages/Contact";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(
+createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <HashRouter>
       <Routes>
@@ -19,6 +18,6 @@ root.render(
         <Route path="/unternehmen" element={<AboutUs />} />
         <Route path="/kontakt" element={<Contact />} />
       </Routes>
-    </HashRouter>{" "}
+    </HashRouter>
   </React.StrictMode>
 );

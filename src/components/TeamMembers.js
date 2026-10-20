@@ -1,37 +1,29 @@
-import React from "react";
-import "../styles/AboutUs.css";
-
 import MemberContainer from "./MemberContainer";
+import kerimPhoto from "../images/team/kerim.webp";
+import ufukPhoto from "../images/team/ufuk.webp";
 
-const TeamMembers = () => {
-  return (
-    <div>
-      <h2 className="about-title" style={{ marginTop: "30px" }}>
-        Das Team
-      </h2>
+const members = [
+  {
+    name: "A. Kerim Turhan",
+    img: kerimPhoto,
+    titles: ["Inhaber", "Bauingenieur", "Energie Effizienz Experte"],
+  },
+  {
+    name: "Ufuk Büyüknalbant",
+    img: ufukPhoto,
+    titles: ["Geschäftsführer", "Elektroingenieur", "PV-Anlagen Experte"],
+  },
+];
 
-      <div className="teamMembersBody">
-        <MemberContainer
-          img="https://i.postimg.cc/TYB4Tj33/kerim.jpg"
-          name="A. Kerim Turhan"
-          titles={[
-            "• Inhaber",
-            "• Bauingenieur",
-            "• Energie Effizienz Experte",
-          ]}
-        />
-        <MemberContainer
-          img="https://i.postimg.cc/bNZ5XV85/ufuk.jpg"
-          name="Ufuk Büyüknalbant"
-          titles={[
-            "• Geschäftsführer",
-            "• Elektroingenieur",
-            "• PV-Anlagen Experte",
-          ]}
-        />
-      </div>
+const TeamMembers = () => (
+  <div>
+    <h2 className="about-title team-title">Das Team</h2>
+    <div className="teamMembersBody">
+      {members.map((member) => (
+        <MemberContainer key={member.name} {...member} />
+      ))}
     </div>
-  );
-};
+  </div>
+);
 
 export default TeamMembers;

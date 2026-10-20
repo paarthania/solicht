@@ -1,4 +1,13 @@
-/* Header.css */
+.desktop-header {
+  display: none;
+  width: 80%;
+}
+
+.mobile-header {
+  display: block;
+  width: 82%;
+  margin: auto;
+}
 
 .header {
   display: flex;
@@ -9,45 +18,69 @@
   color: #2f6185;
 }
 
-.main-titles {
-  display: flex;
-  cursor: pointer;
+.logo-image {
+  width: 60px;
+  height: 60px;
 }
 
-.title {
+.main-titles {
+  display: flex;
+}
+
+.nav-link {
   color: #2f6185;
   text-decoration: none;
-  position: relative;
   margin-right: 70px;
-  font-size: 30px;
+  margin-bottom: 7px;
+  font-size: 15px;
   font-weight: bold;
 }
 
-.title:hover {
+.nav-link:hover {
   color: #f7941d;
 }
 
-.subtitles {
-  width: 120px;
-  position: absolute;
-  top: 100%;
-  padding: 10px;
-  z-index: 999;
-  font-size: 15px;
+.mobile-header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  margin-bottom: 30px;
+  color: #2f6185;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
 }
 
-.subtitle {
-  color: white;
-
-  margin-bottom: 10px;
-  cursor: pointer;
+.mobile-logo-image {
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
 }
 
-.subtitle:hover {
-  color: #f7941d;
+.mobile-menu-label {
+  font-weight: bold;
+}
+
+.mobile-menu {
+  list-style-type: none;
+  margin-left: -25px;
+}
+
+.mobile-menu li {
+  margin-bottom: 20px;
 }
 
 @media (min-width: 1000px) {
+  .desktop-header {
+    display: block;
+    margin: auto;
+  }
+
+  .mobile-header {
+    display: none;
+  }
+
   .logo {
     margin-left: 15px;
   }

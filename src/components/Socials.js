@@ -1,38 +1,34 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faWhatsapp,
-  faInstagram,
-  faFacebook,
-} from "@fortawesome/free-brands-svg-icons";
-import "./SocialMediaWidget.css";
+import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
+import "../styles/Socials.css";
 
-const SocialMediaWidget = () => {
-  return (
-    <div className="social-media-widget">
+const links = [
+  { href: "https://wa.me/491628182112", label: "WhatsApp", Icon: FaWhatsapp },
+  {
+    href: "https://www.instagram.com/solicht.energie/",
+    label: "Instagram",
+    Icon: FaInstagram,
+  },
+  {
+    href: "https://www.facebook.com/profile.php?id=61561744439723",
+    label: "Facebook",
+    Icon: FaFacebook,
+  },
+];
+
+const SocialMediaWidget = () => (
+  <div className="social-media-widget">
+    {links.map(({ href, label, Icon }) => (
       <a
-        href="https://wa.me/491628182112"
+        key={label}
+        href={href}
         target="_blank"
         rel="noopener noreferrer"
+        aria-label={label}
       >
-        <FontAwesomeIcon icon={faWhatsapp} size="2x" />
+        <Icon size="2em" />
       </a>
-      <a
-        href="https://www.instagram.com/solicht.energie/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FontAwesomeIcon icon={faInstagram} size="2x" />
-      </a>
-      <a
-        href="https://www.facebook.com/profile.php?id=61561744439723"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FontAwesomeIcon icon={faFacebook} size="2x" />
-      </a>
-    </div>
-  );
-};
+    ))}
+  </div>
+);
 
 export default SocialMediaWidget;

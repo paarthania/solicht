@@ -1,127 +1,107 @@
-/* Container for the main section */
 .main-container {
-    background-color: #183347;
-    font-family: "Montserrat", sans-serif;
-    margin: auto;
-    margin-top: 250px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
-    color: white; /* Ensure all text in main container is white */
+  background-color: #183347;
+  margin: auto;
+  margin-top: 250px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: white;
 }
 
-/* Title section */
 .main-title-text {
-    font-size: 33px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 20px 30px;
-    color: #f7941d; /* Title color */
+  font-size: 33px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 20px 30px;
+  color: #f7941d;
 }
 
 .title-text {
-    font-size: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 25px;
-    color: #f7941d; /* Title color */
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  color: #f7941d;
 }
 
-/* Content section with benefits */
 .content-wrapper {
-    text-align: left; /* Align text to the left for readability */
-    margin: 0 auto;
-    padding: 0 20px;
-    max-width: 800px;
+  text-align: left;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 800px;
 }
 
-/* Benefits list */
 .benefits-list {
-    font-size: 18px;
-    line-height: 1.6;
-    color: white; /* Text color in the benefits list */
-    margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 .benefits-list h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #f7941d; /* Heading color */
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #f7941d;
 }
 
 .benefits-list ul {
-    padding-left: 20px;
-    list-style-type: none;
-
+  padding-left: 20px;
+  list-style-type: none;
 }
 
-.benefits-list ul li:before  {
-    content: "➜";
-    margin-right: 8px; 
-
-    margin-bottom: 10px;
+.benefits-list ul li:before {
+  content: "➜";
+  margin-right: 8px;
+  margin-bottom: 10px;
 }
 
-/* Button styling */
 .request-button {
-    display: inline-flex; 
-    text-align: center;
-    align-items: center; /* Center text vertically */
-    justify-content: center; /* Center text horizontally */
-    padding: 20px 30px; /* Increased padding for a bigger button */
-    font-size: 20px; /* Larger font size */
-    font-weight: bold;
-    color: #fff;
-    background-color: #f7941d; /* Button color */
-    border: none;
-    border-radius: 50%; /* Circular button */
-    text-decoration: none;
-    cursor: pointer;
-    margin-top: 20px;
-    line-height: 1.3; /* Increased line-height for more space between lines */
-    width: 120px; /* Fixed width for circular shape */
-    height: 120px; /* Fixed height for circular shape */
-    position: relative; /* Position relative to adjust with top and right */
-    top: -10px; /* Move the button up */
-    right: -10px; /* Move the button to the right */
-    display: flex;
-    align-items: center; /* Center text vertically */
-    justify-content: center; /* Center text horizontally */
-    text-transform: uppercase; /* Transform text to uppercase */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -10px;
+  right: -10px;
+  width: 120px;
+  height: 120px;
+  margin-top: 20px;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 50%;
+  background-color: #f7941d;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.3;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
 }
-
 
 .request-button:hover {
-    background-color: #3e7dab;
+  background-color: #3e7dab;
 }
 
-/* Responsive adjustments */
 @media (min-width: 800px) {
-    .main-container {
-        max-width: 1050px;
-        padding-bottom: 30px;
+  .main-container {
+    max-width: 1050px;
+    padding-bottom: 30px;
+  }
 
-    }
+  .main-title-text {
+    margin: 10px 90px;
+  }
 
-    .main-title-text {
-        font-size: 33px;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin: 10px 90px;
-        color: #f7941d; /* Title color */
-    }
-    
+  .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
 
-    .content-wrapper {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .request-button {
-        margin-left: auto; /* Align button to the right */
-        margin-top: 0; /* Remove top margin for better alignment */
-    }
+  .request-button {
+    margin-left: auto;
+    margin-top: 0;
+  }
 }

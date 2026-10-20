@@ -47,6 +47,7 @@
 }
 
 .info_button {
+  font-family: inherit;
   border: 0px;
   color: #f7941d;
   background-color: transparent;
@@ -69,5 +70,44 @@
 
   .bottom_infos {
     margin-left: 300px;
+  }
+}
+
+.info-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 600px;
+  overflow-y: auto;
+  border-radius: 10px;
+  background-color: white;
+  padding: 30px;
+  border: 3px solid #f7941d;
+  z-index: 9999;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.info-content {
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  color: #2f6185;
+  font-weight: 800;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
